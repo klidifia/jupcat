@@ -11,6 +11,23 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    margin-right: 10px;
+}
+
+
+.site-header,
+.site-footer {
+    border: 0;
+    padding: 1rem 0;
 }
 
 .page-content {
