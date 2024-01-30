@@ -14,21 +14,40 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-#logo {
-    display: flex;
-    align-items: center;
-}
-
-#logo img {
-    margin-right: 10px;
-}
-
-#links {
-    img {
-        width: 50px;
+.site-header {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: calc(1200px - 30px * 2);
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+        padding-left: 30px;
     }
 }
 
+#logo {
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+#links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    img {
+        display: block;
+        height: 30px;
+    }
+}
 
 .site-header,
 .site-footer {
