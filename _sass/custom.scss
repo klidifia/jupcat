@@ -1,7 +1,7 @@
 body,
 html {
- height: 100%;
- margin: 0;
+    height: 100%;
+    margin: 0;
 }
 
 body {
@@ -33,6 +33,10 @@ body {
         margin-right: auto;
         padding: 0 2rem;
 
+        @media (max-width: 768px) {
+            padding: 0 1rem;
+        }
+
         #logo {
             flex-grow: 0;
             display: flex;
@@ -40,11 +44,19 @@ body {
 
             img {
                 margin-right: 1rem;
+
+                @media (max-width: 768px) {
+                    width: 60px;
+                }
             }
 
             h1 {
                 margin: 0;
                 font-family: "Helvetica Bold", Arial, sans-serif;
+
+                @media (max-width: 768px) {
+                    font-size: 1em;
+                }
             }
         }
 
@@ -61,6 +73,10 @@ body {
             img {
                 display: block;
                 height: 35px;
+
+                @media (max-width: 768px) {
+                    height: 25px;
+                }
             }
         }
     }
@@ -74,10 +90,17 @@ body {
 
 .page-content {
     padding: 5rem 0;
+    @media (max-width: 768px) {
+        padding: 2rem 0;
+    }
 
     .wrapper {
         max-width: 70%;
         margin: auto;
+
+        @media (max-width: 768px) {
+            max-width: 85%;
+        }
     }
 
     section {
@@ -100,6 +123,10 @@ body {
         .intro-text {
             font-size: 4rem;
             margin-bottom: 2rem;
+
+            @media (max-width: 768px) {
+                font-size: 2.5em;
+            }
         }
 
         .buy {
@@ -156,6 +183,8 @@ body {
                 max-width: 100%;
                 margin-right: 0;
                 margin-left: 0;
+                padding-left: 0;
+                padding-right: 0;
             }
 
             .first {
