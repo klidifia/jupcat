@@ -210,6 +210,19 @@ a:hover {
     }
 }
 
+.coingecko {
+    text-align: center;
+    padding-top: 2rem;
+
+    img {
+        width: 300px;
+
+        @media (max-width: 768px) {
+            width: 200px;
+        }
+    }
+}
+
 .site-header,
 .site-footer {
     border: 0;
