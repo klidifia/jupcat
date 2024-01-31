@@ -121,9 +121,13 @@ body {
 
         .sometext {
             font-size: 1.2em;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline;
+            padding: 8px;
+            border-radius: 8px;
 
             .gradient {
-                background: -webkit-linear-gradient(45deg, #ff4b1f, #1fddff);
+                background: -webkit-linear-gradient(45deg, #02bada, #b8f163);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
