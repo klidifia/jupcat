@@ -76,7 +76,7 @@ body {
     padding: 5rem 0;
 
     .wrapper {
-        max-width: calc(1000px - 30px * 2);
+        max-width: 85%;
     }
 
     .wrap {
@@ -161,6 +161,10 @@ body {
                 max-width: 100%;
                 margin-right: 0;
                 margin-left: 0;
+            }
+
+            .second {
+                margin-top: 3rem;
             }
         }
     }
