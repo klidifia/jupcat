@@ -40,6 +40,7 @@ body {
             margin-right: auto;
             padding: 0 2rem;
             margin-bottom: 5rem;
+            margin-top: 1rem;
 
             @media (max-width: 768px) {
                 padding: 0 1rem;
@@ -53,9 +54,10 @@ body {
 
                 img {
                     margin-right: 1rem;
+                    max-width: 65px;
 
                     @media (max-width: 768px) {
-                        width: 60px;
+                        width: 50px;
                     }
                 }
 
