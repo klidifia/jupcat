@@ -16,6 +16,19 @@ body {
     font-style: normal;
 }
 
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: #1ab0c1;
+    outline: none;
+}
+
+a:hover {
+    color: white;
+}
+
 .header {
     background-image: url('images/bg.png');
     background-position: center;
@@ -200,19 +213,6 @@ body {
         max-width: unset;
         padding: 0;
     }
-
-    a,
-    a:visited,
-    a:hover,
-    a:active,
-    a:focus {
-        color: #1ab0c1;
-        outline: none;
-    }
-
-    a:hover {
-        color: white;
-    }
 }
 
 .dark-bg {
@@ -290,6 +290,9 @@ body {
 
     p {
         text-align: center;
-        margin-bottom: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
