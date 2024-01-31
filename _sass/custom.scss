@@ -143,8 +143,7 @@ body {
 
         .sub-intro-text {
             font-size: 1.5em;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: inline;
+            background-color: rgba(0, 0, 0, 0.35);
             padding: 8px;
             border-radius: 8px;
 
@@ -154,9 +153,12 @@ body {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 text-fill-color: transparent;
-                padding: 10px;
                 border-radius: 5px;
                 display: inline;
+            }
+
+            p {
+                margin-bottom: 0;
             }
         }
 
