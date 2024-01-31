@@ -55,7 +55,8 @@ a:hover {
             margin-top: 1rem;
 
             @media (max-width: 768px) {
-                padding: 0 1rem;
+                margin-top: 0.75rem;
+                padding: 0 0.75rem;
             }
 
             #logo {
@@ -77,7 +78,7 @@ a:hover {
                     font-family: "Helvetica Bold", Arial, sans-serif;
 
                     @media (max-width: 768px) {
-                        font-size: 1em;
+                        font-size: 1.25em;
                     }
                 }
             }
@@ -89,16 +90,24 @@ a:hover {
                 gap: 10px;
 
                 .twitter {
-                    padding: 0 1rem;
+                    padding: 0 1.25rem;
+
+                    @media (max-width: 768px) {
+                        padding: 0 0.75rem;
+                    }
+                }
+
+                > div {
+                    width: 45px;
+
+                    @media (max-width: 768px) {
+                        width: 30px;
+                    }
                 }
 
                 img {
                     display: block;
-                    height: 35px;
-
-                    @media (max-width: 768px) {
-                        height: 25px;
-                    }
+                    width: 100%;
                 }
             }
         }
