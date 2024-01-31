@@ -11,7 +11,11 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica Bold', Arial, sans-serif;
+
+    .wrapper {
+        max-width: calc(1200px - 30px * 2);
+    }
 }
 
 @font-face {
@@ -21,19 +25,14 @@ body {
     font-style: normal;
 }
 
-.site-header .wrapper #logo h1 {
-    font-family: 'MyCustomFont', Arial, sans-serif;}
-
 .site-header {
     .wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: calc(1200px - 30px * 2);
         margin-right: auto;
         margin-left: auto;
-        padding-right: 0;
-        padding-left: 30px;
+        padding: 0;
 
         #logo {
             flex-grow: 0;
@@ -75,6 +74,15 @@ body {
 }
 
 .page-content {
+    .wrapper {
+        max-width: calc(800px - 30px * 2);
+    }
+
+    .intro-text {
+        margin-top: 5rem;
+        font-size: 3rem;
+    }
+
     a,
     a:visited,
     a:hover,
