@@ -76,27 +76,25 @@ body {
     padding: 5rem 0;
 
     .wrapper {
-        max-width: 85%;
+        max-width: 70%;
+        margin: auto;
     }
 
-    .wrap {
+    section {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 4rem;
 
-        .first,
+        .first {
+            flex: 1;
+            padding-right: 2rem;
+            max-width: 50%;
+        }
+
         .second {
             flex: 1;
-        }
-
-        .first {
-            margin-right: 2rem;
-            max-width: 60%;
-        }
-
-        .second {
-            max-width: 40%;
+            max-width: 50%;
         }
 
         .intro-text {
@@ -114,6 +112,10 @@ body {
             border-radius: 5px;
             margin-bottom: 2rem;
 
+            &:visited {
+                color: black;
+            }
+
             &:hover {
                 background-color: darken(#c7f382, 10%);
             }
@@ -127,11 +129,11 @@ body {
             border-radius: 8px;
 
             .gradient {
-                background: -webkit-linear-gradient(45deg, #02bada, #b8f163);
+                background: linear-gradient(45deg, #02bada, #b8f163);
+                background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                background-clip: text;
-                color: transparent;
+                text-fill-color: transparent;
                 padding: 10px;
                 border-radius: 5px;
                 display: inline;
@@ -142,19 +144,12 @@ body {
             max-width: 100%;
             height: auto;
         }
+    }
 
-        @media (max-width: 768px) {
+    @media (max-width: 768px) {
+        section {
             flex-direction: column;
             align-items: flex-start;
-
-            .buy {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-
-            .main-cat {
-                margin: 0;
-            }
 
             .first,
             .second {
@@ -163,12 +158,15 @@ body {
                 margin-left: 0;
             }
 
+            .first {
+                margin-bottom: 2rem; // Add space between the .first and .second divs
+            }
+
             .second {
-                margin-top: 3rem;
+                margin-top: 0; // Reset the top margin for .second div
             }
         }
     }
-
 
     a,
     a:visited,
