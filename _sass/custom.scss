@@ -152,16 +152,6 @@ body {
             padding: 8px;
             border-radius: 8px;
 
-            .gradient {
-                background: linear-gradient(45deg, #02bada, #b8f163);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                text-fill-color: transparent;
-                border-radius: 5px;
-                display: inline;
-            }
-
             p {
                 margin-bottom: 0;
             }
@@ -268,11 +258,25 @@ body {
 
     .content {
         text-align: center;
+
+        p.gradient {
+            font-size: 2em;
+        }
     }
 }
 
 .green {
     color: #c7f382;
+}
+
+.gradient {
+    background: linear-gradient(45deg, #02bada, #b8f163);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    border-radius: 5px;
+    display: inline;
 }
 
 .break {
