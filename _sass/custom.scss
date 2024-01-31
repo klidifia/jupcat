@@ -252,6 +252,25 @@ body {
     }
 }
 
+.bottom {
+    background-image: url('images/bg-bottom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+
+    @media (max-width: 768px) {
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+
+    .content {
+        text-align: center;
+    }
+}
+
 .green {
     color: #c7f382;
 }
