@@ -81,6 +81,20 @@ body {
     .intro-text {
         margin-top: 5rem;
         font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .buy {
+        border-radius: 10px;
+        background-color: #c7f382;
+        padding: 10px;
+        border: 0;
+        color: #000 !important;
+
+        &:hover {
+            background-color: #9dbf5f;
+            text-decoration: none;
+        }
     }
 
     a,
@@ -88,7 +102,7 @@ body {
     a:hover,
     a:active,
     a:focus {
-        color: #f8eb4e;
+        color: #1ab0c1;
         outline: none;
     }
 
