@@ -173,9 +173,15 @@ a:hover {
         }
 
         .ca {
+            position: relative;
+            background-image: url('images/copy.png');
+            background-repeat: no-repeat;
+            background-size: 32px;
+            background-position: calc(100% - 10px) center;
+            border: none;
             cursor: pointer;
             word-break: break-all;
-            padding: 10px 20px;
+            padding: 10px 50px 10px 10px;
             display: table;
             background-color: #02bada;
             color: white;
