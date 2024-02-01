@@ -89,12 +89,16 @@ a:hover {
                 justify-content: flex-end;
                 gap: 10px;
 
-                .twitter {
-                    padding: 0 1.25rem;
+               > div {
+                    padding-right: 1.25rem;
 
                     @media (max-width: 768px) {
-                        padding: 0 0.75rem;
+                        padding-right: 0.5rem;
                     }
+
+                   &:last-child {
+                       padding: 0;
+                   }
                 }
 
                 > div {
@@ -165,6 +169,27 @@ a:hover {
 
             &:hover {
                 background-color: darken(#c7f382, 10%);
+            }
+        }
+
+        .ca {
+            cursor: pointer;
+            word-break: break-all;
+            padding: 10px 20px;
+            display: table;
+            background-color: #02bada;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+
+            &:visited {
+                color: white;
+            }
+
+            &:hover {
+                background-color: darken(#02bada, 10%);
             }
         }
 
